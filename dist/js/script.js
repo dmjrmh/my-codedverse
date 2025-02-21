@@ -47,3 +47,29 @@ toggleDarkMode.addEventListener('click', function() {
     logo.src = "dist/img/navbar/lg-nvbr-rmbg.png";
   }
 })
+
+// toggle dark mode automatically
+function applyTheme(theme) {
+  if (theme === "dark") {
+    html.classList.add("dark");
+    toggleDarkMode.checked = true;
+    logo.src = "dist/img/navbar/lg-nvbr-white-rmbg.png";
+    localStorage.setItem("theme", "dark");
+  } else {
+    html.classList.remove("dark");
+    toggleDarkMode.checked = false;
+    logo.src = "dist/img/navbar/lg-nvbr-rmbg.png";
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// check theme what system used
+const savedTheme = localStorage.getItem("theme") || 
+  (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+applyTheme(savedTheme);
+
+// Event listener untuk toggle switch
+toggleDarkMode.addEventListener("change", function () {
+  applyTheme(toggleDarkMode.checked ? "dark" : "light");
+});

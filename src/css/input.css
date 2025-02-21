@@ -10,7 +10,7 @@
 }
 
 .icons {
-  @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-paragraph hover:border-secondary hover:bg-primary hover:text-white;
+  @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-paragraph hover:border-secondary hover:bg-primary hover:text-white dark:text-white;
 }
 
 body {
