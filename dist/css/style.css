@@ -536,6 +536,9 @@
   .right-4 {
     right: calc(var(--spacing) * 4);
   }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -709,6 +712,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -1248,26 +1254,39 @@ body {
     }
   }
 }
+.navbar-fixed {
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--color-stone-50);
+  opacity: 90%;
+  --tw-backdrop-blur: blur(var(--blur-xs));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  &:where(.dark, .dark *) {
+    background-color: color-mix(in oklab, var(--color-secondary) 50%, transparent);
+  }
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
 .hamburger-line {
-  margin-bottom: calc(var(--spacing) * 1);
-  height: calc(var(--spacing) * 1);
+  margin-block: calc(var(--spacing) * 2);
+  display: block;
+  height: 2px;
   width: 30px;
   background-color: var(--color-secondary);
   &:where(.dark, .dark *) {
     background-color: var(--color-slate-200);
   }
 }
-.hamburger-active > span:nth-child(1) {
+.hamburger-active>span:nth-child(1) {
+  rotate: 45deg;
+}
+.hamburger-active>span:nth-child(2) {
   --tw-scale-x: 0%;
   --tw-scale-y: 0%;
   --tw-scale-z: 0%;
   scale: var(--tw-scale-x) var(--tw-scale-y);
 }
-.hamburger-active > span:nth-child(2) {
-  rotate: 45deg;
-}
-.hamburger-active > span:nth-child(3) {
-  margin-top: 19px;
+.hamburger-active>span:nth-child(3) {
   rotate: calc(45deg * -1);
 }
 .navbar-animate {
@@ -1279,21 +1298,6 @@ body {
   transition-duration: 500ms;
   --tw-ease: var(--ease-in-out);
   transition-timing-function: var(--ease-in-out);
-}
-.navbar-fixed {
-  position: fixed;
-  background-color: var(--color-stone-50);
-  opacity: 90%;
-  --tw-backdrop-blur: blur(var(--blur-xs));
-  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  &:where(.dark, .dark *) {
-    background-color: var(--color-secondary);
-  }
-  &:where(.dark, .dark *) {
-    background-color: color-mix(in oklab, var(--color-secondary) 50%, transparent);
-  }
-  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.2);
 }
 .navbar-header {
   position: absolute;
@@ -1580,21 +1584,6 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -1630,6 +1619,21 @@ body {
 @property --tw-backdrop-sepia {
   syntax: "*";
   inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-blur {
   syntax: "*";
