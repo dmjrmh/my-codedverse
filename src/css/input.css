@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import '@fontsource/exo-2';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #8294C4;
   --color-secondary: #222831;
@@ -24,15 +26,15 @@ body {
 }
 
 .name-style {
-  @apply block font-bold text-secondary text-2xl mt-1 md:text-4xl;
+  @apply block font-bold text-secondary text-2xl mt-1 md:text-4xl dark:text-slate-200;
 }
 
 .button-find-me {
-  @apply text-base font-semibold bg-primary py-3 px-8 rounded-full hover:shadow-xl hover:opacity-80 hover:text-slate-900 transition duration-300 ease-in-out;
+  @apply text-base font-semibold bg-primary py-3 px-8 rounded-full hover:shadow-xl hover:opacity-80 hover:text-slate-900 transition duration-300 ease-in-out dark:text-slate-200 dark:hover:text-white;
 }
 
 .hamburger-line {
-  @apply w-[30px] h-1 mb-1 bg-secondary;
+  @apply w-[30px] h-1 mb-1 bg-secondary dark:bg-slate-200;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -52,19 +54,38 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[99] bg-stone-50 opacity-90;
-  backdrop-filter: blur(5px);
+  @apply fixed bg-stone-50 opacity-90 backdrop-blur-xs dark:bg-secondary dark:bg-secondary/50;
   box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.2);
 }
 
 .navbar-header {
-  @apply absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none;
+  @apply absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-secondary dark:shadow-slate-400 lg:dark:bg-transparent;
 }
 
 .li-a-animate {
-  @apply text-base font-semibold text-secondary py-2 mx-8 flex group-hover:text-primary;
+  @apply text-base font-semibold text-secondary py-2 mx-8 flex group-hover:text-primary dark:text-slate-200;
 }
 
 .tech-set {
   @apply max-w-[120px] cursor-pointer mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8;
+}
+
+.fab-back-to-top {
+  @apply fixed justify-center items-center bottom-4 right-4 z-50 h-14 w-14 rounded-full bg-primary p-4 hover:animate-pulse;
+}
+
+.arrow-top {
+  @apply border-t-2 border-r-2 -rotate-45 block w-4 h-4 mt-2;
+}
+
+.container-extension {
+  @apply max-w-full md:px-24;
+}
+
+#darkmode-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
+
+.h4-about {
+  @apply text-2xl text-secondary mb-2 md:text-4xl dark:text-slate-200;
 }
