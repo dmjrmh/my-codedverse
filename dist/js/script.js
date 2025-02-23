@@ -73,3 +73,99 @@ applyTheme(savedTheme);
 toggleDarkMode.addEventListener("change", function () {
   applyTheme(toggleDarkMode.checked ? "dark" : "light");
 });
+
+// typed.js
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed("#typing", {
+      strings: ["I'm a Web Developer", "Full Stack Developer", "Tech Enthusiast"], 
+      typeSpeed: 80,   
+      backSpeed: 50,   
+      loop: true       
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed("#title-bio", {
+      strings: [
+          "Hello everyone! 👋",
+          "Welcome to my world! 🌍",
+          "Hey There! Let’s craft something incredible together! 🚀"
+      ],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed("#about-bio", {
+      strings: [
+          "Who Am I? 🔍",
+          "Beyond the Code: My Story ⚡",
+          "From Curiosity to Creation 🛠️"
+      ],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+var typed = new Typed("#socmed-text", {
+    strings: [
+      "👨‍💻 Follow me on GitHub",
+      "💼 Let's connect on LinkedIn",
+      "📸 Find me on Instagram",
+    ],
+    typeSpeed: 80,
+    backSpeed: 50,
+    loop: true
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modalOverlay = document.getElementById("modalOverlay");
+  const modalContent = document.getElementById("modalContent");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalImage = document.getElementById("modalImage");
+  const modalTech = document.getElementById("modalTech");
+  const modalDescription = document.getElementById("modalDescription");
+  const openModalButtons = document.querySelectorAll(".openModal");
+  const closeModalButtons = document.querySelectorAll("#closeModal");
+
+  function showModal(title, image, description, technology) {
+    modalTitle.textContent = title;
+    modalImage.src = image;
+    modalDescription.innerHTML = description;
+    modalTech.textContent = technology;
+    modalOverlay.classList.remove("hidden");
+    setTimeout(() => {
+      modalOverlay.classList.add("opacity-100");
+      modalContent.classList.remove("scale-75", "opacity-0");
+      modalContent.classList.add("scale-100", "opacity-100");
+    }, 10);
+  }
+
+  function hideModal() {
+    modalOverlay.classList.remove("opacity-100");
+    modalContent.classList.remove("scale-100", "opacity-100");
+    modalContent.classList.add("scale-75", "opacity-0");
+    setTimeout(() => {
+      modalOverlay.classList.add("hidden");
+    }, 300);
+  }
+
+  openModalButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      showModal(this.dataset.title, this.dataset.image, this.dataset.description, this.dataset.technology);
+    });
+  });
+
+  closeModalButtons.forEach(button => {
+    button.addEventListener("click", hideModal);
+  });
+
+  modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) hideModal();
+  });
+});

@@ -50,7 +50,9 @@
                   <a href="#about" class="li-a-animate">About Me</a>
                 </li>
                 <li class="group">
-                  <a href="#l-t" class="li-a-animate">Personal Skills</a>
+                  <a href="#personal-skills" class="li-a-animate"
+                    >Personal Skills</a
+                  >
                 </li>
                 <li class="group">
                   <a href="#portfolio" class="li-a-animate">Portfolio</a>
@@ -84,31 +86,37 @@
     <!-- navbar end -->
 
     <!-- hero section start -->
-    <section id="home" class="pt-36 pb-32 dark:bg-secondary">
+    <section id="home" class="pt-24 md:pt-36 md:pb-32 dark:bg-secondary">
       <div class="container container-extension">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-10 lg:w-1/2">
-            <h1 class="title-style">
-              Hello everyone 👋 its me
-              <span class="name-style">Dame Jeremia</span>
-            </h1>
-            <h2 class="font-medium mb-4 lg:text-2xl dark:text-slate-300">
-              Web Developer |
-              <span class="text-slate-600 dark:text-slate-500"
-                >Full Stack Developer</span
-              >
+          <div class="w-full self-center px-6 lg:w-1/2">
+            <h1 class="title-style"><span id="title-bio"></span></h1>
+            <h2 class="name-style">Dame Jeremia</h2>
+            <h2
+              class="font-medium text-lg mb-2 lg:text-2xl dark:text-slate-300"
+            >
+              <span id="typing"></span>
             </h2>
             <p class="paragraph mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              dolores dicta exercitationem eum repellendus modi quia quis
-              repellat. Praesentium, nemo!
+              I see web development as more than just coding—it’s about creating
+              experiences that connect people and ideas. For me, coding is a way
+              to blend creativity with technology, turning concepts into
+              functional and meaningful web applications. I love designing and
+              developing solutions that not only work flawlessly but also leave
+              a lasting impact. Every project is a journey—an opportunity to
+              learn, improve, and turn challenges into creative solutions.
             </p>
-
-            <a href="#" class="button-find-me">Find me on </a>
+            <a href="#about-me" class="hover-neon">
+              <span class="absolute block"></span>
+              <span class="absolute block"></span>
+              <span class="absolute block"></span>
+              <span class="absolute block"></span>
+              Let's Collaborate
+            </a>
           </div>
 
-          <div class="w-full self-end px-10 lg:w-1/2">
-            <div class="relative mt-4 lg:mt-8 lg:right-0">
+          <div class="w-full self-end px-8 lg:w-1/2">
+            <div class="relative mt-4 lg:mt-6 lg:right-0">
               <img
                 src="dist/img/profile/georgesky-rmbg.png"
                 alt="Dame Jeremia"
@@ -136,32 +144,63 @@
     <!-- hero section end -->
 
     <!-- about section start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-secondary/95">
+    <section id="about" class="pt-24 pb-24 dark:bg-secondary/95">
       <div class="container container-extension">
         <div class="flex flex-wrap">
-          <div class="w-full px-10 lg:w-1/2 mb-10">
+          <div class="w-full px-6 lg:w-1/2 mb-10">
             <h3
               class="font-bold text-primary uppercase text-lg mb-1 md:text-2xl"
             >
               About me
             </h3>
-            <h4 class="font-bold h4-about">Hehehe</h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              sequi totam dolore nemo veniam repellendus est eaque asperiores
-              non quam rem aut minima culpa maxime inventore recusandae, nobis
-              porro! Voluptates!
+            <h4 class="font-bold h4-about"><span id="about-bio"></span></h4>
+            <p class="paragraph mb-2">
+              👋 Hi, I'm Dame Jeremia! Currently in Surabaya, I graduated from
+              17 August 1945 Surabaya University with a Bachelor degree in
+              Informatics 🎓.
             </p>
+            <p class="paragraph">
+              💻 With over
+              <span class="font-semibold">2 years of experience</span> as a
+              Full-Stack Developer, I have worked on various projects,
+              including:
+            </p>
+            <ul class="mb-2">
+              <li class="paragraph">
+                🌐 <span class="font-semibold">Websites</span> – Developing and
+                maintaining platforms for education, media, culinary, and
+                business, including migrating systems from WordPress to PHP &
+                Contentful.
+              </li>
+              <li class="paragraph">
+                🚀 <span class="font-semibold">Landing Pages</span> – Crafting
+                fast and engaging pages for brands and businesses.
+              </li>
+              <li class="paragraph">
+                🏢 <span class="font-semibold">ERP Systems</span> – Building and
+                optimizing business management systems, mostly using Ruby on
+                Rails.
+              </li>
+            </ul>
           </div>
-          <div class="w-full px-10 lg:w-1/2">
+          <div class="w-full px-6 lg:w-1/2">
             <h4 class="font-semibold h4-about md:pt-10">
-              Find me on Social Media
+              <span id="socmed-text"></span>
             </h4>
             <p class="paragraph mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              iusto consectetur et voluptatum laborum aliquid harum eaque
-              voluptatibus neque, accusantium error velit eligendi veritatis
-              repudiandae modi asperiores assumenda ut placeat!
+              🔥 I have experience working with
+              <span class="font-semibold">Ruby on Rails</span> for ERP systems
+              and have used
+              <span class="font-semibold"
+                >JavaScript, Bootstrap CSS, and Tailwind CSS</span
+              >
+              to build modern web applications that streamline business
+              processes for clients. Currently, I’m learning
+              <span class="font-semibold">Laravel 11 and exploring Herd</span>
+              to optimize my development workflow. 📩 Let’s
+              <span class="font-semibold">connect</span> and
+              <span class="font-semibold">build</span>
+              something great together! 🚀
             </p>
             <div class="flex items-center">
               <!-- git hub start-->
@@ -229,266 +268,10 @@
     </section>
     <!-- about section end -->
 
-    <!-- portfolio section start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-zinc-200 dark:bg-secondary">
-      <div class="container container-extension xl:w-10/12 xl:mx-auto">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h3
-              class="font-bold text-primary uppercase text-lg mb-1 md:text-2xl"
-            >
-              Portfolio
-            </h3>
-            <h4
-              class="font-bold text-2xl text-secondary mb-2 md:text-4xl dark:text-slate-200"
-            >
-              Latest Project
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              aliquid tempore autem ab eos sequi rerum vel, non facilis maxime!
-            </p>
-          </div>
-        </div>
-
-        <div class="w-full px-4 flex flex-wrap justify-center">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Website MomUung
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Landing Page Golo
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Landing Page mGanik
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-2.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Website SNA
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-3.jpg"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Qunci Pintar Indonesia - Dashboard Finance
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-3.jpg"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Pirate Dinner Cruise ERP
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-3.jpg"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Diraja Trail Managament System
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-3.jpg"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Sea - Safari ERP
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              All Insurance ERP
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              SJPS ERP
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Migration Wordpress to PHP with CMS integration Website Truckmagz
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="dist/img/portfolio/p-1.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h4
-              class="font-semibold text-xl text-secondary mt-5 mb-3 dark:text-slate-200"
-            >
-              Website Cerita Visual
-            </h4>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              harum sequi temporibus ut quibusdam, quam quas sit dolores rem
-              adipisci!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section end -->
-
-    <!-- tech section start -->
+    <!-- tech or personal skills section start -->
     <section
       id="personal-skills"
-      class="pt-36 pb-16 bg-secondary dark:bg-secondary/95"
+      class="pt-16 md:pt-24 pb-16 md:pb-24 bg-secondary dark:bg-secondary"
     >
       <div class="container container-extension">
         <div class="w-full px-4">
@@ -604,135 +387,287 @@
         </div>
       </div>
     </section>
-    <!-- tech section end -->
+    <!-- tech or personal skills section end -->
 
-    <!-- blog section start -->
-    <section id="blog" class="pt-36 pb-16 bg-slate-100 dark:bg-secondary">
+    <!-- portfolio section start -->
+    <section
+      id="portfolio"
+      class="pt-20 mt:pt-36 pb-16 bg-slate-100 dark:bg-secondary/95"
+    >
       <div class="container container-extension">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h3
               class="font-bold text-primary uppercase text-lg mb-1 md:text-2xl"
             >
-              Blog
+              Portfolio
             </h3>
             <h4
               class="font-bold text-2xl text-secondary mb-2 md:text-4xl dark:text-slate-200"
             >
-              Latest Blog
+              Latest Portfolio
             </h4>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis id eaque hic quae ex non nihil corporis quidem sequi!
+              More than just a collection of work, this portfolio represents my
+              journey of creativity and dedication, shaping innovative and
+              engaging digital experiences
             </p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="portfolio-card-size">
             <div
-              class="bg-white rounded-xl shadow-lg mb-10 overflow-hidden dark:bg-slate-800"
+              class="portfolio-card"
             >
               <img
-                src="dist/img/landscape.jpg"
-                alt="Landscape"
+                src="dist/img/portfolio/sna-tiny.png"
+                alt="Singapore National Academy"
                 class="w-full"
               />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="mb-1 font-semibold text-secondary hover:text-primary text-xl truncate dark:text-slate-200"
-                    >Mechanical Keyboard</a
-                  >
-                </h3>
-                <p class="paragraph mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  asperiores dolorem, magnam architecto nisi perferendis porro
-                  dolorum aliquid exercitationem eaque!
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-full hover:bg-secondary bg:text-primary"
-                  >Read More</a
+              <div class="py-6 px-6">
+                <h3
+                  class="portfolio-card-title"
                 >
+                  Singapore National Academy
+                </h3>
+                <p class="paragraph mb-4 line-clamp-4">
+                  In the Singapore National Academy project, I took on the role
+                  of transforming static designs from Adobe Illustrator into a
+                  dynamic and fully functional website. The platform serves as a
+                  comprehensive digital hub for SNA, featuring essential school
+                  information such as activities, facilities, enrollment
+                  procedures, news & events, and connections to the SNA
+                  community. This project required meticulous attention to
+                  detail to ensure that the original design integrity was
+                  preserved while optimizing the site’s responsiveness, user
+                  experience, and functionality. By bridging the gap between
+                  design and development, I aimed to create a seamless, visually
+                  appealing, and intuitive platform that effectively represents
+                  the school’s identity and enhances user engagement.
+                </p>
+                <button
+                  data-title="Singapore National Academy"
+                  data-image="dist/img/portfolio/sna-tiny.png"
+                  data-technology="Technology : Contentful (CMS), Bulma CSS, PHP & JavaScript"
+                  data-description="In the Singapore National Academy project, I took on the role
+                  of transforming static designs from Adobe Illustrator into a
+                  dynamic and fully functional website. The platform serves as a
+                  comprehensive digital hub for SNA, featuring essential school
+                  information such as activities, facilities, enrollment
+                  procedures, news & events, and connections to the SNA
+                  community. This project required meticulous attention to
+                  detail to ensure that the original design integrity was
+                  preserved while optimizing the site’s responsiveness, user
+                  experience, and functionality. By bridging the gap between
+                  design and development, I aimed to create a seamless, visually
+                  appealing, and intuitive platform that effectively represents
+                  the school’s identity and enhances user engagement."
+                  class="openModal portfolio-card-cta"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="portfolio-card-size">
             <div
-              class="bg-white rounded-xl shadow-lg mb-10 overflow-hidden dark:bg-slate-800"
+              class="portfolio-card"
             >
               <img
-                src="dist/img/landscape.jpg"
-                alt="Landscape"
+                src="dist/img/portfolio/ceritavisual-tiny.png"
+                alt="Cerita Visual"
                 class="w-full"
               />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="mb-1 font-semibold text-secondary hover:text-primary text-xl truncate dark:text-slate-200"
-                    >Landscape</a
-                  >
-                </h3>
-                <p class="paragraph mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  asperiores dolorem, magnam architecto nisi perferendis porro
-                  dolorum aliquid exercitationem eaque!
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-full hover:bg-secondary bg:text-primary"
-                  >Read More</a
+              <div class="py-6 px-6">
+                <h3
+                  class="portfolio-card-title"
                 >
+                  Cerita Visual
+                </h3>
+                <p class="paragraph mb-4 line-clamp-4">
+                  Ceritavisual is a landing page development project inspired by Gatsby Ghost, designed to enhance client website engagement. This project leverages Contentful as a headless CMS for efficient content management, allowing content to be dynamically fetched via API. The HTML structure is pre-designed, ensuring smooth integration with Contentful’s API for real-time content updates. For styling, the project utilizes Bulma CSS, a modern framework that provides pre-built components and a responsive grid system. This combination streamlines the development process, allowing the team to focus on delivering a high-quality user experience without backend complexities.The result is a professional, dynamic, and visually compelling landing page that effectively boosts user engagement and strengthens the client’s digital presence.
+                </p>
+                <button
+                  data-title="Cerita Visual"
+                  data-image="dist/img/portfolio/ceritavisual-tiny.png"
+                  data-technology="Technology : Contentful (CMS), Bulma CSS, PHP & JavaScript"
+                  data-description="Ceritavisual is a landing page development project inspired by Gatsby Ghost, designed to enhance client website engagement. This project leverages Contentful as a headless CMS for efficient content management, allowing content to be dynamically fetched via API. The HTML structure is pre-designed, ensuring smooth integration with Contentful’s API for real-time content updates. For styling, the project utilizes Bulma CSS, a modern framework that provides pre-built components and a responsive grid system. This combination streamlines the development process, allowing the team to focus on delivering a high-quality user experience without backend complexities. The result is a professional, dynamic, and visually compelling landing page that effectively boosts user engagement and strengthens the client’s digital presence."
+                  class="openModal portfolio-card-cta"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
 
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="portfolio-card-size">
             <div
-              class="bg-white rounded-xl shadow-lg mb-10 overflow-hidden dark:bg-slate-800"
+              class="portfolio-card"
             >
               <img
-                src="dist/img/landscape.jpg"
-                alt="Landscape"
+                src="dist/img/portfolio/momuung-tiny.png"
+                alt="Mom Uung"
                 class="w-full"
               />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="mb-1 font-semibold text-secondary hover:text-primary text-xl truncate dark:text-slate-200"
-                    >Learn Programming</a
-                  >
-                </h3>
-                <p class="paragraph mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  asperiores dolorem, magnam architecto nisi perferendis porro
-                  dolorum aliquid exercitationem eaque!
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-full hover:bg-secondary bg:text-primary"
-                  >Read More</a
+              <div class="py-6 px-6">
+                <h3
+                  class="portfolio-card-title"
                 >
+                  Mom Uung
+                </h3>
+                <p class="paragraph mb-4 line-clamp-4">
+                  Momuung.id is a website project I developed using PHP, Bulma CSS, and JavaScript. It is a redesign of the client's previous design, provided in CorelDRAW for both mobile and desktop versions. My role was to transform the design into a fully functional and responsive website. The website features a blog, a carousel, and a product showcase that directs users to WhatsApp or the client's e-commerce platform. It also integrates Contentful as a headless CMS for managing dynamic content and Tawk.to as a chat widget for real-time customer interaction.
+                </p>
+                <button
+                  data-title="Mom Uung"
+                  data-image="dist/img/portfolio/momuung-tiny.png"
+                  data-technology="Technology : Contentful (CMS), Bulma CSS, PHP & JavaScript"
+                  data-description="Momuung.id is a website project I developed using PHP, Bulma CSS, and JavaScript. It is a redesign of the client's previous design, provided in CorelDRAW for both mobile and desktop versions. My role was to transform the design into a fully functional and responsive website. The website features a blog, a carousel, and a product showcase that directs users to WhatsApp or the client's e-commerce platform. It also integrates Contentful as a headless CMS for managing dynamic content and Tawk.to as a chat widget for real-time customer interaction."
+                  class="openModal portfolio-card-cta"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card-size">
+            <div
+              class="portfolio-card"
+            >
+              <img
+                src="dist/img/portfolio/ssc-tiny.png"
+                alt="Sea Safari Cruises"
+                class="w-full"
+              />
+              <div class="py-6 px-6">
+                <h3
+                  class="portfolio-card-title truncate"
+                >
+                  Sea Safari Cruises
+                </h3>
+                <p class="paragraph mb-4 line-clamp-4">
+                  Sea Safari Cruises is a system developed to enhance efficiency in voyage management and ticket sales for passengers traveling to destinations such as Raja Ampat, Labuan Bajo, South Halmahera, Alor, and more. This project started from scratch. I handled data migration and master data setup based on the ERD provided by the project manager to meet the client's business process requirements. In this project, I collaborated with other developers and was responsible for updating the features that had already been implemented. My contributions include: Setting up data migration and master data according to the project manager’s ERD. Adding a QR Code module to facilitate passenger attendance before departure. Developing a real-time API for exporting Excel CSV, enabling marketing agents to promote ticket sales with up-to-date data. Adding guide data for diving instructors when needed. Updating the Frappe/Gantt calendar, which helps monitor the ship departure schedule with color indicators representing different statuses: available, confirmed departure, chartered, or maintenance.
+                </p>
+                <button
+                  data-title="Sea Safari Cruises - ERP"
+                  data-image="dist/img/portfolio/ssc-tiny.png"
+                  data-technology="Technology : Tailwind CSS, Ruby on Rails, PostgreSQL & RESTful API"
+                  data-description="Sea Safari Cruises is a system developed to enhance efficiency in voyage management and ticket sales for passengers traveling to destinations such as Raja Ampat, Labuan Bajo, South Halmahera, Alor, and more. This project started from scratch. I handled data migration and master data setup based on the ERD provided by the project manager to meet the client's business process requirements. In this project, I collaborated with other developers and was responsible for updating the features that had already been implemented. My contributions include: &lt;ul&gt;&lt;li&gt;Setting up data migration and master data according to the project manager’s ERD.&lt;/li&gt;&lt;li&gt;Adding a QR Code module to facilitate passenger attendance before departure.&lt;/li&gt;&lt;li&gt;Developing a real-time API for exporting Excel CSV, enabling marketing agents to promote ticket sales with up-to-date data.&lt;/li&gt;&lt;li&gt;Adding guide data for diving instructors when needed.&lt;/li&gt;&lt;li&gt;Updating the Frappe/Gantt calendar, which helps monitor the ship departure schedule with color indicators representing different statuses: available, confirmed departure, chartered, or maintenance.&lt;/li&gt;&lt;/ul&gt;"
+                  class="openModal portfolio-card-cta"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card-size">
+            <div
+              class="portfolio-card"
+            >
+              <img
+                src="dist/img/portfolio/qunci-tiny.png"
+                alt="Qunci Pintar Indonesia - Finance Dashboard"
+                class="w-full"
+              />
+              <div class="py-6 px-6">
+                <h3
+                  class="portfolio-card-title truncate"
+                >
+                  Qunci Pintar Indonesia - Finance Dashboard
+                </h3>
+                <p class="paragraph mb-4 line-clamp-4">
+                  QPI - Finance Dashboard is a system designed to manage the distribution of travel allowances for drivers during the delivery process by logistics companies. This system collaborates with a technology-based cooperative that provides an API for loan applications and repayments, where the funds are initially provided by the cooperative and later reimbursed by the logistics company. The system utilizes Supabase as a database to store driver information, transactions, and verification statuses from the cooperative (accepted/declined). The user interface is developed using Tailwind CSS with the Lineone template, while the backend is built with Ruby on Rails, incorporating RESTful API integration for external services
+                </p>
+                <button
+                  data-title="Qunci Pintar Indonesia - Finance Dashboard"
+                  data-image="dist/img/portfolio/qunci-tiny.png"
+                  data-technology="Technology : Tailwind CSS, Supabase, Ruby on Rails & RESTful API"
+                  data-description="QPI - Finance Dashboard is a system designed to manage the distribution of travel allowances for drivers during the delivery process by logistics companies. This system collaborates with a technology-based cooperative that provides an API for loan applications and repayments, where the funds are initially provided by the cooperative and later reimbursed by the logistics company. The system utilizes Supabase as a database to store driver information, transactions, and verification statuses from the cooperative (accepted/declined). The user interface is developed using Tailwind CSS with the Lineone template, while the backend is built with Ruby on Rails, incorporating RESTful API integration for external services"
+                  class="openModal portfolio-card-cta"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card-size">
+            <div
+              class="portfolio-card"
+            >
+              <img
+                src="dist/img/portfolio/pdc-tiny.png"
+                alt="Pirate Dinner Cruises"
+                class="w-full"
+              />
+              <div class="py-6 px-6">
+                <h3
+                  class="portfolio-card-title truncate"
+                >
+                  Pirate Dinner Cruises
+                </h3>
+                <p class="paragraph mb-4 line-clamp-4">
+                  Pirate Dinner Cruises is a management system for lunch and dinner cruises. The system helps manage trip schedules, reservations, and essential information related to vessels and passengers. In this project, my contributions include:
+                  Implementing AJAX to display trip details for specific dates in the calendar, allowing users to view real-time information without refreshing the page.
+                  Integrating QR Code functionality to streamline the check-in process and validate passengers before departure.
+                </p>
+                <button
+                  data-title="Pirate Dinner Cruises - ERP"
+                  data-image="dist/img/portfolio/ssc-tiny.png"
+                  data-technology="Technology : Tailwind CSS, Ruby on Rails, PostgreSQL & AJAX"
+                  data-description="Pirate Dinner Cruises is a management system for lunch and dinner cruises. The system helps manage trip schedules, reservations, and essential information related to vessels and passengers.
+                  In this project, my contributions include:
+                  <ul>
+                    <li><strong>Implementing AJAX</strong> to display trip details for specific dates in the calendar, allowing users to view real-time information without refreshing the page.</li>
+                    <li><strong>Integrating QR Code</strong> functionality to streamline the check-in process and validate passengers before departure.</li>
+                  </ul>"
+                  class="openModal portfolio-card-cta"
+                >
+                  Read More
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- blog section end -->
+    <!-- portfolio section end -->
+
+    <!-- modal start -->
+    <div id="modalOverlay" class="modal-overlay bg-opacity-50 hidden flex">
+      <div
+        id="modalContent"
+        class="modal-content scale-75 opacity-0 transition-all duration-300"
+      >
+        <button
+          id="closeModal"
+          class="modal-close-button cursor-pointer"
+        >
+          &times;
+        </button>
+        <img
+          id="modalImage"
+          src=""
+          alt=" Image"
+          class="w-[90%] rounded-lg mx-auto"
+        />
+        <h2 id="modalTitle" class="modal-title""></h2>
+        <p id="modalDescription" class="mt-4 text-gray-300 paragraph"></p>
+        <p id="modalTech" class="font-bold mt-4 text-base lg:text-lg leading-relaxed text-paragraph"></p>
+      </div>
+    </div>
+    <!-- modal end -->
 
     <!-- footer start -->
     <footer class="bg-secondary pt-24 pb-12 dark:bg-secondary/95">
       <div class="container container-extension">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h3 class="font-bold text-4xl text-white mb-5">Dame Jeremia</h3>
-            <h4 class="font-bold text-2xl mb-2">Contact Us</h4>
+            <h3 class="font-bold text-4xl text-white mb-2">Dame Jeremia</h3>
             <p>Surabaya, East Java</p>
           </div>
           <div
@@ -767,13 +702,6 @@
                   href="#portfolio"
                   class="inline-block text-base hover:text-primary mb-3"
                   >Portfolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Blog</a
                 >
               </li>
             </ul>
@@ -869,6 +797,12 @@
     </a>
     <!-- fab back to top end -->
 
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
