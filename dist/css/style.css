@@ -659,9 +659,6 @@
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
-  .max-h-96 {
-    max-height: calc(var(--spacing) * 96);
-  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
@@ -1484,6 +1481,19 @@ body {
       --tw-grayscale: grayscale(0%);
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
+  }
+  &:active {
+    --tw-scale-x: 125%;
+    --tw-scale-y: 125%;
+    --tw-scale-z: 125%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  &:active {
+    opacity: 100%;
+  }
+  &:active {
+    --tw-grayscale: grayscale(0%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   @media (width >= 64rem) {
     margin-inline: calc(var(--spacing) * 6);

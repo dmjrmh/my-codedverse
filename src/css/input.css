@@ -76,7 +76,7 @@ body {
 }
 
 .tech-set {
-  @apply max-w-[120px] cursor-pointer mx-4 py-4 opacity-60 grayscale transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:scale-125;
+  @apply max-w-[120px] cursor-pointer mx-4 py-4 opacity-60 grayscale transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:scale-125 active:opacity-100 active:scale-125 active:grayscale-0;
 }
 
 .fab-back-to-top {
